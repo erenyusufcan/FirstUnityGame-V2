@@ -80,4 +80,4 @@ Screenshots and gameplay video will be added after recording.
 
 ## 👤 Author
 **Eren Yusuf Can**  
-Software Engineering Student & Game Developer  
+Software Engineering Student
