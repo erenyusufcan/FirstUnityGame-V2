@@ -1,0 +1,24 @@
+using DG.Tweening;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Collectable : MonoBehaviour
+{
+    void Start()
+    {
+        StartAnimation();
+    }
+
+     void StartAnimation()
+    {
+        transform.DOMoveY(transform.position.y + 1,1f)
+            .SetLoops(-1,LoopType.Yoyo).SetEase(Ease.InOutQuad);
+        transform.DORotate(Vector3.up * 90,1f)
+            .SetLoops(-1, LoopType.Incremental)
+            .SetEase(Ease.Linear);
+        
+    }
+    
+}
